@@ -4,6 +4,9 @@ li svg{
   padding: 10px;
   border-radius: 12px;
 }
+.react-icons{
+  font-size: x-large;
+}
 .profile-user-content img{
   height: 50px;
   border-radius: 30px;

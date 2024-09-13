@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical, faFaceMeh, faFileCirclePlus, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Picker from '@emoji-mart/react';
+import { IoSend } from "react-icons/io5";
 
 export function ChatUsers({ userChat, loginUser, secondUser, defaultImageUrl, dropdownRefs, toggleDropdown, dropdownOpen, showEmojiPicker, handleCloseClick, onSendMessage, FileChange, preview, handleKeyDown, setInput, input, refOfInput, emojiData, setShowEmojiPicker, deleteForEveryone, deleteForMe }) {
     
@@ -145,7 +146,7 @@ export function ChatUsers({ userChat, loginUser, secondUser, defaultImageUrl, dr
                 )}
                 <input type="file" id="fileInput" className="d-none" onChange={FileChange} />
                 <button className="btn bg-white text-secondary border-0" onClick={() => document.getElementById('fileInput').click()}><FontAwesomeIcon className="border-0" icon={faFileCirclePlus} /></button>
-                <button className="btn btn-primary" onClick={onSendMessage}> Send </button>
+                <IoSend color='gray' className='mt-1 react-icons' onClick={onSendMessage}/>
               </div>
             </div>
           </div>
