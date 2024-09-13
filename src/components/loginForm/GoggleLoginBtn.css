@@ -1,0 +1,18 @@
+.loginWithGoogle{
+  border-radius: 4px;
+  height: 40px;
+  max-width: 400px;
+  min-width: min-content;
+  padding: 0 12px;
+  margin: 12px 70px;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  position: relative;
+}
+.svg-gl{
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.gsi-material-button-state{
+  opacity: 0
+}

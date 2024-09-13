@@ -1,0 +1,402 @@
+.main-Container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+.gradient-custom {
+  background: linear-gradient(to bottom right, rgb(117 209 221), #c9d5e8);
+}
+
+.mask-custom {
+  background: rgb(196 196 203 / 20%);
+  max-height: 56px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.left-card-body {
+  padding: 0;
+}
+
+.member-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.message-input {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.options-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options-menu button {
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.options-menu button:hover {
+  background-color: #f5f5f5;
+}
+
+.css-1dbjc4n {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: stretch;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.custom-width {
+  width: 322px;
+}
+
+.custom-text {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: 20px;
+  align-items: stretch;
+  font-weight: 600;
+  justify-content: flex-start;
+}
+
+.fa-circle FaCircle {
+  margin-top: -24px;
+  margin-left: -30px;
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  font-size: 12px;
+  min-width: 16px;
+  border-radius: 8px;
+  background-color: rgb(14, 114, 207);
+  padding-left: 4px;
+  width: 16px;
+  margin-left: 4px;
+  color: white;
+}
+
+.message-input {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.list-unstyled.text-white {
+  margin-top: 50px;
+  border-end-end-radius: 0px;
+  padding: 40px;
+  height: 64vh;
+}
+
+.card .custom-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card .text-black-margin {
+  margin: 0px 34px 0px 0px;
+}
+
+.dropup-menu {
+  margin-left: -170px;
+  margin-top: -80px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.fw-bold-margin {
+  margin: 2px 12px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  max-height: 24vh;
+  border-radius: 10px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  display: flex;
+  align-self: start;
+  margin-left: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mx-hw {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.activeIcon {
+  margin-left: -34px;
+  margin-top: -15px;
+  width: 32px;
+}
+
+.timeStamp {
+  margin-top: 6px;
+}
+
+.loader-container svg {
+  margin: 30px 100px;
+}
+
+.chat-input {
+  width: 80%;
+  bottom: 0;
+}
+
+.messages {
+  max-width: 100px;
+  font-size: small;
+}
+
+.pt-3 {
+  max-height: 75px;
+}
+
+.edit-icon {
+  font-size: x-large;
+  top: auto;
+}
+
+.pickerDiv {
+  position: absolute;
+  bottom: 50px;
+}
+
+.pickerDiv button {
+  position: absolute;
+  top: -20px;
+  right: 4px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  padding: 0px 280px;
+}
+
+.img-preview {
+  position: absolute;
+  right: 104px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-preview img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 5px;
+}
+
+.chat-img {
+  max-height: 44vh;
+  max-width: 54vh;
+}
+
+.video-call-icon {
+  font-size: x-large;
+  margin-right: 18px;
+}
+
+.voice-call-icon {
+  font-size: larger;
+  margin-right: 20px;
+}
+
+#videoChat {
+  position: fixed;
+  width: 85%;
+  height: 85vh;
+  min-width: 350px;
+  top: 160px;
+  left: 323px;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.VideoEndBtn {
+  top: 700px;
+  right: 200px;
+  padding: 13px 20px;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  width: 100px;
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.notification .unread-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 0.75em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.incoming-call {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-left: 400px;
+}
+
+.call-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.call-details {
+  color: white;
+  margin-top: 100px;
+
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.call-type {
+  font-size: 12px;
+}
+
+.call-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-button,
+.reject-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.accept-button {
+  background-color: #4caf50;
+  background-image: url('https://spng.pngfind.com/pngs/s/255-2551885_whatsapp-mobile-phones-emoji-green-text-png-image.png');
+  background-size: cover;
+}
+
+.reject-button {
+  background-color: #f44336;
+  background-image: url('https://th.bing.com/th/id/OIP.saLiiYA-PAyM1KRYXWCEgwHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7');
+  background-size: cover;
+}
+
+.settingIcon {
+  color: #8d8d8d;
+  font-size: small;
+  width: 20px;
+}
+
+.royalblue-msg {
+  background-color: royalblue;
+  color: white;
+  border-radius: 18px;
+}
+
+.royalgray-msg {
+  background-color: rgb(216, 217, 219);
+  color: rgb(0, 0, 0);
+  border-radius: 18px;
+}
+
+.royalgray-msg p,
+.royalblue-msg p {
+  margin-top: -8px;
+  height: 18px;
+}
+
+.input-content {
+  border: 1px solid;
+  border-radius: 30px;
+  height: 50px;
+  background-color: white;
+  padding: 6px;
+}

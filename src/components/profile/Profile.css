@@ -1,0 +1,86 @@
+.infContentStyle{
+  margin-top: 100px;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+}
+.main-container{
+  padding-top: 120px;
+}
+.main-container .container{
+  background-color: white;
+}
+.edit-icon{
+  color: black;
+  z-index: 1;
+}
+.img-circle{
+  border-radius: 100px;
+  max-width: 100%;
+  max-height: 200px;
+}
+.close-icon{
+  margin-left: 365px;
+  border: none;
+  font-size: 26px;
+}
+.m-12{
+  margin: 12px;
+}
+.edit-m-close{
+  margin-left: 312px;
+  border: none;
+  font-size: 26px;
+}
+.profile-logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: black;
+}
+.profile-logo h1{
+  margin-bottom: 40px;
+}
+.table{
+  border-collapse: separate;
+  margin-top: 60px;
+}
+p span{
+  font-weight: bold;
+}
+.title{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: black;
+  margin: 1rem 0px;
+}
+.flex-item-text {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: black;
+  width: 62%;
+  font-size: 1.1rem;
+}
+.profile-logo h1{
+  color: #444555;
+}
+.space-x-4{
+  font-size: -webkit-xxx-large;
+  width: 50px;
+}
+.social-media{
+  margin-left: -16px;
+}
+.social-media svg{
+  width: 48px;
+}
+.flex-icon-text svg{
+  margin-left: 10px;
+}
+.modal-content{
+  margin-top: 200px;
+}
+.form-group{
+  margin-top: 12px;
+} 

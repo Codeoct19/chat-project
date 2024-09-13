@@ -1,0 +1,86 @@
+li svg{
+  font-size: xxx-large;
+  width: 80px;
+  padding: 10px;
+  border-radius: 12px;
+}
+.profile-user-content img{
+  height: 50px;
+  border-radius: 30px;
+}
+.user-logout-btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  text-align: center;
+  font-size: xx-large;
+  margin-right: 16px;
+  color: black;
+  background-color: rgb(241, 240, 240);
+}
+.user-logout-btn svg{
+  margin-bottom: 8px;
+}
+.nav-link :hover{
+  background-color: #f5f6f8;
+}
+.container-fluid .navbar-nav {
+  margin-left: 50pc;
+}
+.nav-item{
+  text-align: center;
+  width: 120px;
+  color: rgb(210, 210, 220);
+  font-weight: 600;
+}
+.nav-link{
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px; 
+  border-radius: 8px;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.navbar-nav{ 
+  margin: 0 !important;
+}
+.nav-logo img{
+  height: 50px;
+  border-radius: 40px;
+}
+.profile-actions svg{
+  font-size: xx-large;
+  color: black;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.profile-actions div{
+  border-radius: 50px;
+  background-color: #d6d6d6;
+  height: 48px;
+  width: 48px;
+  margin-right: 8px;
+}
+.nav-link-wrapper {
+  position: relative;
+}
+.icon-label {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  width: 80px;
+  border-radius: 10px;
+  height: 25px;
+  text-align: center;
+  background-color: #474646;
+}
+.nav-link-wrapper:hover .icon-label {
+  display: block;
+}

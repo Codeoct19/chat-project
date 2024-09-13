@@ -1,0 +1,118 @@
+body{
+  background-color: #F0F2F5;
+  color: rgb(192, 188, 188);
+}
+.headerImg{
+  height: 320px;
+  width: 1750px;
+  border-radius: 8px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+}
+.headerImg img{
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+.instant-team-chats{
+  padding: 100px;
+  color: #43484b;
+}
+.h-W-home{
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #6c7277;
+  font-family: Sora, sans-s erif;
+  font-size: 70px;
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  line-height: 120%;
+}
+.heading-wl{
+  width: max-content;
+}
+.h-W-home span{
+  color: royalblue;
+}
+.chat-instantly{
+  color: royalblue;
+  font-family: Sora, sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+}
+.chat-instantly p{
+  color: #605555;
+}
+.chat-instantly{
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 650px;
+  justify-content: space-evenly;
+}
+.content-images img{
+  height: 500px;
+  width: 700px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+.loginBtn{
+  height: 50px;
+  width: 120px;
+  font-size: larger;
+  border: none;
+  border-radius: 6px;
+  color: aliceblue;
+  background-color: royalblue;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.need{
+  margin-top: 180px;
+  color: #cdc119;
+}
+.need h3{
+  font-family: Sora, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+.need p{
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #a09daa;
+  font-family: Sora, sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+}
+.profile-actions img{
+  height: 50px;
+}
+.instant-team-chats p{
+  width: 1000px;
+}
+.flex-item-text{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 1.1rem;
+}
+li a{
+  text-decoration: none;
+  color: rgb(0 0 0);
+}
+li::marker{
+  content: "";
+}
+ul{
+  padding-left: 0rem;
+}
+.space-x-4{
+  margin-left: -75px;
+}
