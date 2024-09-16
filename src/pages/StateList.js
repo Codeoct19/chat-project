@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import AddState from "./AddState";
+import AddState from "../components/address/AddState";
 import Swal from "sweetalert2";
 import { RegionDropdown } from "react-country-region-selector";
 import styled from "styled-components";  
-import {apiRequest} from "../../utils/APIUtils";
-import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
-import { socket } from "../../Socket";
+import {apiRequest} from "../utils/APIUtils";
+import { PaginatedTable } from "../utils/PaginatedTable";
+import { socket } from "../Socket";
 
 const CloseMButton = styled.section`margin-left: 312px; border: none;  font-size: 26px;`;  
 

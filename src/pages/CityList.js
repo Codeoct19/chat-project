@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { apiRequest } from '../../utils/APIUtils';
-import AddCity from "./AddCity";
+import { apiRequest } from '../utils/APIUtils';
+import AddCity from "../components/address/AddCity";
 import Swal from "sweetalert2";
 import styled from "styled-components";
-import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
-import { socket } from "../../Socket";
+import { PaginatedTable } from "../utils/PaginatedTable";
+import { socket } from "../Socket";
 
-const CloseMButton = styled.section`
-  margin-left: 312px;
-  border: none; 
-  font-size: 26px;
-`;
+const CloseMButton = styled.section`margin-left: 312px; border: none; font-size: 26px;`;
 
 const CityList = () => {
   const [data, setData] = useState([]);

@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ChatBox.css';
-import { socket } from '../../Socket';
-import VideoCallModal from './VideoCall';
+import '../asset/ChatBox.css';
+import { socket } from '../Socket';
+import VideoCallModal from '../components/chatBox/VideoCall';
 import Swal from 'sweetalert2';
 import { Container, Row, Col, Button} from 'react-bootstrap';
-import { Context } from '../context/Context';
-import CallingScreen from './CallScreen';
-import EditModal from './EditUserDtlModal';
-import { ChatUserList } from './ChatUserList';
-import { ChatHeader } from './ChatHeader';
-import { ChatUsers } from './ChatUsers';
-import { ChatIncomingCall } from "./ChatIncomingCall";
-import { sendMsg, currentMessages, SearchUser } from "../../utils/ChatUtils";
-import { onSetSocket } from "../../utils/SocketUtils";
+import { Context } from '../components/context/Context';
+import CallingScreen from '../components/chatBox/CallScreen';
+import EditModal from '../components/chatBox/EditUserDtlModal';
+import { ChatUserList } from '../components/chatBox/ChatUserList';
+import { ChatHeader } from '../components/chatBox/ChatHeader';
+import { ChatUsers } from '../components/chatBox/ChatUsers';
+import { ChatIncomingCall } from "../components/chatBox/ChatIncomingCall";
+import { sendMsg, currentMessages, SearchUser } from "../utils/ChatUtils";
+import { onSetSocket } from "../utils/SocketUtils";
    
 const defaultImageUrl = 'http://localhost:3001/public/images/chat_1720443750151.png';
 

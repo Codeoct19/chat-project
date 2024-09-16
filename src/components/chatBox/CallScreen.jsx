@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaVolumeUp } from 'react-icons/fa';
-import './CallScreen.css';
+import '../../asset/CallScreen.css';
 import VoiceCallModal from './VoiceCall';
 
 const CallingScreen = ({Receiver, socket, caller, setShowCallingScreen, callStatus}) => {

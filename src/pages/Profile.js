@@ -3,12 +3,12 @@ import { Footer } from "flowbite-react";
 import React, { useState , useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import './Profile.css'; 
+import '../asset/Profile.css'; 
 import Swal from "sweetalert2";
 import { GoPencil } from "react-icons/go";
-import { Context } from "../context/Context";
-import {apiRequest} from "../../utils/APIUtils";
-import { socket } from "../../Socket";
+import { Context } from "../components/context/Context";
+import {apiRequest} from "../utils/APIUtils";
+import { socket } from "../Socket";
 
 const ProfilePage = () => {
   const navigate = useNavigate(); 

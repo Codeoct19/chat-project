@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import "./Home.css";
+import "../asset/Home.css";
 import { useNavigate } from "react-router-dom";
-import { Context } from "../context/Context";
-import { FooterContent } from "../footer/Footer"; 
-import { socket } from "../../Socket";
+import { Context } from "../components/context/Context";
+import { FooterContent } from "../components/footer/Footer"; 
+import { socket } from "../Socket";
   const HomePage = () => {
     const { accessToken } = useContext(Context);
     const navigate = useNavigate(); 
@@ -13,7 +13,7 @@ import { socket } from "../../Socket";
       <div className="">
         <div className="home-container d-flex justify-content-center flex-nowrap flex-row">
           <div className="d-flex justify-content-center flex-nowrap flex-row">
-            <div >
+            <div> 
               <div className="headerImg">
                 <img src="http://localhost:8080/userImg/images/homePageImages.jpg" />
               </div>

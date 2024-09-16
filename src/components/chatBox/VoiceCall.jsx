@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import SimplePeer from 'simple-peer';
 
 const VoiceCallModal = ({ callStatus, socket, caller, Receiver }) => {
   
   const [socketRef, setSocketRef] = useState(null);
   const localAudioRef = useRef();
-  const localStreamRef = useRef();
   const remoteAudioRef = useRef();
 
   useEffect(() => {
@@ -14,9 +12,6 @@ const VoiceCallModal = ({ callStatus, socket, caller, Receiver }) => {
    }
   }, [callStatus, socket, caller, Receiver]);
 
-  if(callStatus === 'active'){
-  
-  }
   
   return(
     <>
