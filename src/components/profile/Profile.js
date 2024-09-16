@@ -8,6 +8,8 @@ import Swal from "sweetalert2";
 import { GoPencil } from "react-icons/go";
 import { Context } from "../context/Context";
 import {apiRequest} from "../../utils/APIUtils";
+import { socket } from "../../Socket";
+
 const ProfilePage = () => {
   const navigate = useNavigate(); 
   const [editModal, setEditModal] = useState(false);
@@ -18,10 +20,10 @@ const ProfilePage = () => {
   const [editData, setEditData] = useState({ fname: "", lname: "", email: ""});
   const [showUploadImg, setShowUploadImg] = useState(false);
   const {Img} = useContext(Context);
-  
   const tok = localStorage.getItem('access_token');
   useEffect(() => {
     if (tok == null) { navigate('/'); } 
+    if(socket.connected){socket.disconnect()}
   }, [tok]);
 
   const fetchData = async () => {

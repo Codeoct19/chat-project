@@ -3,10 +3,12 @@ import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import { Context } from "../context/Context";
 import { FooterContent } from "../footer/Footer"; 
+import { socket } from "../../Socket";
   const HomePage = () => {
     const { accessToken } = useContext(Context);
     const navigate = useNavigate(); 
     const openLoginForm = () => { navigate('/login'); }
+    if(socket.connected){socket.disconnect()}
     return(
       <div className="">
         <div className="home-container d-flex justify-content-center flex-nowrap flex-row">

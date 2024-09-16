@@ -17,7 +17,9 @@ import { useEffect } from 'react';
 function App() {
   const { accessToken, userImg } = useContext(Context);
   const [logo, setLogo] = useState(null);
-  useEffect(() => { setLogo(userImg) }, [logo, userImg]);
+  useEffect(() => { 
+    setLogo(userImg);
+  }, [logo, userImg]);
 
   return (
     <BrowserRouter>

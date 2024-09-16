@@ -4,7 +4,8 @@ import Swal from "sweetalert2";
 import styled from "styled-components";
 import { apiRequest } from '../../utils/APIUtils';
 import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
-// ../tablePagination/PaginatedTable
+import { socket } from "../../Socket";
+
 const CloseMButton = styled.section`margin-left: 312px; border: none; font-size: 26px;`;
 const Countrylist = () => {
   const [showModal, setShowModal] = useState(false);
@@ -30,6 +31,7 @@ const Countrylist = () => {
 
   useEffect(() => {
     fetchurl();
+    if(socket.connected){socket.disconnect()}
   }, []);
 
   const handleDel = async (element) => {

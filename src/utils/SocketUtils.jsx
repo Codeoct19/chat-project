@@ -1,9 +1,8 @@
-import { useEffect } from "react";
-
 export const onSetSocket = (socket, loginUser, searchText, UserCurrentMessage, incrementUnreadMessages, setAllUsers, setCallStatus, setCaller, setShowIncomingPopup, setCallRecevier, setShowCallingScreen, setWs, setOnlineUsers, setUserChat) => {
-  
+  if(!socket.connected){
+    socket.connect();
+  }
   setWs(socket);
-  console.log('socket.....', socket);
   socket.on('connect', () => {
     if (loginUser && loginUser?.userid) {
       socket.emit("loginUser", loginUser);
@@ -11,7 +10,6 @@ export const onSetSocket = (socket, loginUser, searchText, UserCurrentMessage, i
   });
 
   socket.on('userList', (userList) => {
-    console.log('UserList', userList);
     if (searchText === ''){ 
       setAllUsers(userList);
     }
@@ -62,7 +60,13 @@ export const onSetSocket = (socket, loginUser, searchText, UserCurrentMessage, i
   socket.on('callerActive', message => {
     setCallStatus('active');
   });
+ 
   return(() => {
-    socket.disconnect();
+    if(socket.connected){
+      socket.disconnect();
+    }
+    socket.on('callerActive');
+    socket.on('connect');
+    socket.on('userList');
   })
 }

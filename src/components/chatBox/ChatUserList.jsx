@@ -15,6 +15,7 @@ export function ChatUserList({loggedInimg, defaultImageUrl, loginUser, onEditCli
     else if (minutes > 0){ return `${minutes}m ago`;}
     else { return 'Just now'; }
   };
+  
   return(
     <div className="col-md-3 mb-4 mb-md-0 d-flex flex-column flex-shrink-0 bg-white custom-width mx-auto">
       <div className="shadow-sm text-black flex-grow-1">

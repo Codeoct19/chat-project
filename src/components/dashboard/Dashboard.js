@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import { apiRequest } from '../../utils/APIUtils';
 import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
+import { socket } from '../../Socket';
 const DashbordPage = () => {
   const [users, setUsers] = useState([]);
   const [show, setShow] = useState(false);
@@ -22,6 +23,7 @@ const DashbordPage = () => {
   }
   useEffect(() => {
     fetchurl();
+    if(socket.connected){socket.disconnect()}
   }, []);
   const handleEdit = async (user) => {
     setFormData({

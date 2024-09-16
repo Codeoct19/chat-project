@@ -5,6 +5,8 @@ import { RegionDropdown } from "react-country-region-selector";
 import styled from "styled-components";  
 import {apiRequest} from "../../utils/APIUtils";
 import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
+import { socket } from "../../Socket";
+
 const CloseMButton = styled.section`margin-left: 312px; border: none;  font-size: 26px;`;  
 
 const StateList = () => {
@@ -29,6 +31,7 @@ const StateList = () => {
   }
   useEffect(() => {
     fetchUrl();
+    if(socket.connected){socket.disconnect()}
   }, []);
   const handleState = () => {
     setShowModal(true);

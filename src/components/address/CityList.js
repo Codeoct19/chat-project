@@ -4,6 +4,7 @@ import AddCity from "./AddCity";
 import Swal from "sweetalert2";
 import styled from "styled-components";
 import { PaginatedTable } from "../../utils/tablePagination/PaginatedTable";
+import { socket } from "../../Socket";
 
 const CloseMButton = styled.section`
   margin-left: 312px;
@@ -34,6 +35,7 @@ const CityList = () => {
   }
   useEffect(() => {
     fetchUrl();
+    if(socket.connected){socket.disconnect()}
   }, [])
 
   // Send city delete request on server

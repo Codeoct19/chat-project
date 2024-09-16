@@ -88,7 +88,6 @@ const ChatContent = ({ loggedInimg }) => {
   }, []);
 
   // Socket logics --------------
-
   useEffect(() => {
     onSetSocket(socket, loginUser, searchText, UserCurrentMessage, incrementUnreadMessages, setAllUsers, setCallStatus, setCaller, setShowIncomingPopup, setCallRecevier, setShowCallingScreen, setWs, setOnlineUsers, setUserChat);
   },[socket, loginUser, onSetSocket, searchText]);
